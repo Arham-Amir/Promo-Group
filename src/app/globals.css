@@ -25,5 +25,9 @@
     opacity: 1;
     visibility: visible;
   }
-
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
