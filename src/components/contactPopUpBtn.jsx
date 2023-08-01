@@ -25,7 +25,7 @@ const ContactPopUpBtn = () => {
   return (
     <section className='relative'>
       <button className="fixed bottom-5 right-5 z-20 bg-transparent animate-bounce">
-        <CTooltip onClick={handleWhatsappClick} open={showNumber} placement="top-start" title="+92 3001114461" className='' arrow >
+        <CTooltip onClick={handleWhatsappClick} open={showNumber} placement="top-start" title="&#127477;&#127472; +92 3001114461" className='' arrow >
           <p><ImWhatsapp className='text-green-500' size={35} /></p>
         </CTooltip>
       </button>
