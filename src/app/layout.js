@@ -1,7 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from '@components/navbar'
 import Head from 'next/head';
+import Navbar from '@components/navbar'
+import ContactPopUpBtn from '@components/contactPopUpBtn'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={inter.className}>
         <Navbar></Navbar>
+        <ContactPopUpBtn></ContactPopUpBtn>
         {children}
       </body>
     </html>
