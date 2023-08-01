@@ -1,5 +1,5 @@
-import Slider from "@components/slider"
-import ProjectTeames from "@components/projectTeames"
+import Slider from "@components/Home/slider"
+import ProjectTeames from "@components/Home/projectTeames"
 export default function Home() {
   return (
     <main className="">
