@@ -8,8 +8,7 @@ const Nav_Links = (props = {}) => {
       <Link href="#" className="">CONTACT-US</Link>
       <Link href="#" className="re">ABOUT</Link>
     </div>
-    <button onClick={()=>{props.showHamBurger()}}><ImMenu className='lg:hidden' size={25} /></button>
-
+    <button className='lg:hidden'  onClick={()=>{props.showHamBurger()}}><ImMenu size={25} /></button>
   </>
   );
 }
