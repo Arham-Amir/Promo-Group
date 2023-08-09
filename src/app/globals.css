@@ -30,4 +30,7 @@
     justify-content: center;
     align-items: center;
   }
+  #visit:hover > .icon {
+    display: block;
+  }
 }
