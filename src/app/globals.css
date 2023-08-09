@@ -25,12 +25,16 @@
     opacity: 1;
     visibility: visible;
   }
-  .flex-center{
+
+  .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #visit:hover > .icon {
+
+  #visit:hover>.icon {
     display: block;
   }
+
+
 }
