@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { ImWhatsapp } from 'react-icons/im';
 import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/system';
+import Link from 'next/link';
 
 const ContactPopUpBtn = () => {
   const [showNumber, setShowNumber] = useState(false);
@@ -25,9 +26,9 @@ const ContactPopUpBtn = () => {
   return (
     <section className='relative'>
       <button className="fixed bottom-5 right-5 z-20 bg-transparent animate-bounce">
-        <CTooltip onClick={handleWhatsappClick} open={showNumber} placement="top-start" title="&#127477;&#127472; +92 3001114461" className='' arrow >
-          <p><ImWhatsapp className='text-green-500' size={35} /></p>
-        </CTooltip>
+        {/* <CTooltip onClick={handleWhatsappClick} open={showNumber} placement="top-start" title="&#127477;&#127472; +92 3001114461" className='' arrow > */}
+          <Link href={'https://wa.me/+923071996482'} target='_blank'><ImWhatsapp className='text-green-500' size={40} /></Link>
+        {/* </CTooltip> */}
       </button>
     </section>
   );
