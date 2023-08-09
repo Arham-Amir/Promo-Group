@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { AiOutlineLine } from 'react-icons/ai';
+import Image from "next/image"
 
 const Slider = () => {
   const imgs = ['/image/slider2.png', '/image/slider3.png', '/image/slider1.png'];
@@ -14,7 +15,7 @@ const Slider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrImg((prevIndex) => (prevIndex + 1) % imgs.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -24,8 +25,9 @@ const Slider = () => {
       <button onClick={() => handleSlideChange((currImg - 1 + imgs.length) % imgs.length)} className='absolute top-1/2 left-6'>
         <BsFillArrowLeftCircleFill className='text-white' size={46} />
       </button>
-      <img className="object-cover w-full xs:h-[80vh] 2xl:h-[90vh]" src={imgs[currImg]} alt="Slider1"
-        loading='lazy' />
+      <Image src={imgs[currImg]} width={0} height={0}
+        className="object-cover w-full xs:h-[80vh] 2xl:h-[90vh]" alt="Slider1"
+      />
       <button onClick={() => handleSlideChange((currImg + 1) % imgs.length)} className='absolute top-1/2 right-6'>
         <BsFillArrowRightCircleFill className='text-white' size={46} />
       </button>

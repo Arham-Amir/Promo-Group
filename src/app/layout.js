@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
 import Navbar from '@components/Base/navbar'
+import Footer from '@components/Base/footer'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         <ContactPopUpBtn></ContactPopUpBtn>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   )
