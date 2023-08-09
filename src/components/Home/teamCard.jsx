@@ -9,5 +9,4 @@ const TeamCard = (props = {}) => {
     </section>
   );
 }
-
 export default TeamCard;
