@@ -1,11 +1,12 @@
 'use client'
 import Link from 'next/link';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { ImWhatsapp } from 'react-icons/im';
 
 const ContactUsPage = () => {
   const handleSubmit = () => {
-    toast.notify("Default Notification !");
+    toast("Your response send successfully!");
   }
   return (
     <div className="container my-12 mx-auto md:px-6">
