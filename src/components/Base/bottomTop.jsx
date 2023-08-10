@@ -7,7 +7,7 @@ import { ImWhatsapp } from 'react-icons/im'
 
 const BottomTop = (props = {}) => {
   return (
-    <section className="lg:h-[70vh] xs:h-auto px-6 py-10 text-white bg-gradient-to-br from-indigo-950 to-sky-600
+    <section className="2xl:text-2xl 2xl:h-auto lg:h-auto xs:h-auto px-6 pt-12 pb-16 text-white bg-gradient-to-br from-indigo-950 to-sky-600
     flex lg:justify-around lg:flex-row xs:flex-col">
       <section className="py-4  flex flex-col items-center gap-3">
         <Image src={'/image/nav_logo.png'} width={0} height={0}
@@ -42,8 +42,8 @@ const BottomTop = (props = {}) => {
           <p className="text-slate-200 hover:text-white  w-[120px]">Email:</p>
           <p className="text-slate-200 w-fit hover:text-white">promogroup786@gmail.com</p>
         </section>
-        <section className="flex lg:flex-row xs:flex-col w-full gap-4  pb-4 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
-          <p className="text-slate-200 hover:text-white lg:w-[180px] xs:w-[120px]">Address:</p>
+        <section className="flex lg:flex-row xs:flex-col w-full gap-4 pb-4 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
+          <p className="text-slate-200 hover:text-white lg:w-[180px] 2xl:w-[120px] xs:w-[120px]">Address:</p>
           <p className="text-slate-200 hover:text-white w-fit uppercase">
             60-J Block, DHA EME Sector, Multan Road, Lahore, Pakistan
           </p>

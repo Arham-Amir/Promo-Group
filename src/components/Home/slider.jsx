@@ -32,7 +32,7 @@ const Slider = () => {
       <button onClick={() => handleSlideChange((currImg + 1) % imgs.length)} className='absolute top-1/2 right-6'>
         <BsFillArrowRightCircleFill className='text-white' size={46} />
       </button>
-      <h1 className='absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 text-white xl:text-3xl lg:text-2xl ,md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 -skew-x-12 bg-blue-800 bg-opacity-60 backdrop-blur-lg'>Welcome to {' '}
+      <h1 className='absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 text-white xl:text-4xl lg:text-2xl ,md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 '>Welcome to {' '}
         <span><Typewriter
           words={['Promo Group Website ...', 'Promo Group World ...']}
           loop={0}
