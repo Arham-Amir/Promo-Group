@@ -6,7 +6,7 @@ const ContactUsPage = () => {
   function handleClick() {
     toast('Your responce send successfully!')
   }
-  return (<section id='contactus' className='text-center py-14  bg-indigo-950'>
+  return (<section id='contactus' className='mb-10 text-center py-14  bg-indigo-950'>
     <section className='mx-auto p-3  text-5xl text-white text-center font-bold inline-block'>Contact <span className='font-normal'>Us</span></section>
     <section className='w-3/5 mx-auto my-12 flex flex-col items-center gap-10 text-white'>
       <section className='w-full flex lg:flex-row xs:flex-col gap-10'>
