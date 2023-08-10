@@ -20,8 +20,8 @@ const Navbar = () => {
       <div className="lg:hidden z-20 flex flex-col gap-4 font-normal justify-center items-center p-4 mb-4 bg-white w-[100%]">
         <Link href="/" className="w-[90%] border-b-2">HOME </Link>
         <Link href="#services" className="w-[90%] border-b-2">SERVICES</Link>
-        <Link href="/contactus" className="w-[90%] border-b-2">CONTACT-US</Link>
-        <Link href="/about" className="w-[90%] border-b-2">ABOUT</Link>
+        <Link href="#contactus" className="w-[90%] border-b-2">CONTACT-US</Link>
+        <Link href="#about" className="w-[90%] border-b-2">ABOUT</Link>
       </div>
     }
   </>

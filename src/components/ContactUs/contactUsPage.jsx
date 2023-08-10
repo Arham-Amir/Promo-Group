@@ -6,16 +6,16 @@ const ContactUsPage = () => {
   function handleClick() {
     toast('Your responce send successfully!')
   }
-  return (<section className='text-center'>
-    <section className='mx-auto mt-24 p-3 text-4xl text-center font-bold bg-indigo-400 inline-block -skew-x-12'>Contact Us</section>
-    <section className='w-3/5 mx-auto my-16 flex flex-col items-center gap-10'>
+  return (<section id='contactus' className='text-center py-14 bg-[#333]'>
+    <section className='mx-auto p-3  text-5xl text-white text-center font-bold inline-block'>Contact <span className='font-normal'>Us</span></section>
+    <section className='w-3/5 mx-auto my-12 flex flex-col items-center gap-10 text-white'>
       <section className='w-full flex lg:flex-row xs:flex-col gap-10'>
-        <input className='lg:basis-1/2 bg-slate-200 h-10 p-5 rounded-lg' type="text" placeholder='First Name' />
-        <input className='lg:basis-1/2 bg-slate-200 h-10 p-5 rounded-lg' type="text" placeholder='Last Name' />
+        <input className='lg:basis-1/2 border-b-2 bg-transparent h-10 py-5 px-2 focus-within:outline-none rounded-lg' type="text" placeholder='First Name' />
+        <input className='lg:basis-1/2 border-b-2 bg-transparent h-10 py-5 px-2  focus-within:outline-none rounded-lg' type="text" placeholder='Last Name' />
       </section>
-      <input className='w-full bg-slate-200 h-10 p-5 rounded-lg' type="email" name="email" id="email" placeholder='email' />
-      <textarea className='w-full bg-slate-200 h-[200px] p-5 rounded-lg' name="message" id="message" cols="30" rows="10" placeholder='message'></textarea>
-      <button className='py-4 px-7 bg-indigo-700 text-white rounded-lg' onClick={handleClick}>Submit</button>
+      <input className='w-full border-b-2 bg-transparent h-10 py-5 px-2 focus-within:outline-none rounded-lg' type="email" name="email" id="email" placeholder='Email' />
+      <textarea className='w-full border-b-2 bg-transparent h-[100px] py-5 px-2 focus-within:outline-none rounded-lg' name="message" id="message" cols="30" rows="10" placeholder='message'></textarea>
+      <button className='py-3 px-7 mt-4 w-full border-4 border-white text-white rounded-full' onClick={handleClick}>Submit</button>
     </section>
   </section>);
 }
