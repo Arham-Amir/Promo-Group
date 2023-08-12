@@ -1,6 +1,7 @@
-import { useRouter } from 'next/router'
+'use client'
+import { useRouter } from 'next/navigation'
 
-const Nav_LinksMob = ({ setShowLinks, className }) => {
+const Nav_LinksMob = ({ abc, className }) => {
   const router = useRouter()
   function handleClick(e, url) {
     abc()

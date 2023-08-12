@@ -7,8 +7,9 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply font-sans bg-[url('/image/bodyBg.png')];
+    @apply bg-[url('/image/bodyBg.png')];
     box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
   }
 
 }
