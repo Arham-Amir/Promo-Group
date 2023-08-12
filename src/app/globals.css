@@ -9,7 +9,7 @@
   body {
     @apply bg-[url('/image/bodyBg.png')];
     box-sizing: border-box;
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
   }
 
 }
