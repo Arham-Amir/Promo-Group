@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-sans
+  html{
+    scroll-behavior: smooth;
   }
+  body {
+    @apply font-sans bg-[url('/image/bodyBg.png')];
+    box-sizing: border-box;
+  }
+
 }
 
 @layer utilities {

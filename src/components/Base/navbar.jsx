@@ -1,29 +1,25 @@
 'use client'
 import Nav_Logo from "@components/Base/nav_logo";
 import Nav_Links from "@components/Base/nav_links";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import Nav_LinksMob from "@components/Base/nav_LinksMob";
+import { useState } from "react";
 const Navbar = () => {
-  const [showHamBurger, setShowHamBurger] = useState(false)
-  useEffect(()=>{
-    return () => {
-      setShowHamBurger(false)
-    };
-  },[])
+  const [showLinks, setShowLinks] = useState(false)
+
   return (<>
-     <nav className="w-[92vw] mx-auto mb-5 rounded-b-2xl sticky top-0 z-10 bg-opacity-60 backdrop-blur-lg shadow-lg bg-zinc-100 h-20 2xl:h-24 text-blue-950 py-3 lg:pl-10 lg:pr-24 sm:px-10 xs:px-4 xl:text-xl
+    <nav className="w-[92vw] mx-auto mb-5 rounded-b-2xl sticky top-0 z-30 bg-opacity-60 backdrop-blur-lg shadow-lg bg-zinc-100 h-20 2xl:h-28 text-blue-950 py-3 lg:pl-10 lg:pr-24 sm:px-10 xs:px-4 xl:text-lg
     lg:text-md 2xl:text-3xl flex items-center justify-between font-sans">
       <Nav_Logo></Nav_Logo>
-      <Nav_Links showHamBurger={() => setShowHamBurger(!showHamBurger)}></Nav_Links>
+      <Nav_Links className='xs:hidden lg:flex gap-12 font-normal' />
+      <button onClick={() => setShowLinks(!showLinks)} className="basis-1/2 xs:flex xs:items-end xs:flex-col lg:hidden">
+        <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
+        <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
+        <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
+      </button>
     </nav>
-    {showHamBurger &&
-      <div className="lg:hidden z-20 flex flex-col gap-4 font-normal justify-center items-center p-4 mb-4 bg-white w-[100%]">
-        <Link href="/" className="w-[90%] border-b-2">HOME </Link>
-        <Link href="#services" className="w-[90%] border-b-2">SERVICES</Link>
-        <Link href="#contactus" className="w-[90%] border-b-2">CONTACT-US</Link>
-        <Link href="#about" className="w-[90%] border-b-2">ABOUT</Link>
-      </div>
-    }
+    <Nav_LinksMob abc={() => setShowLinks(!showLinks)} className={`xs:fixed xs:z-10 xs:bg-slate-300 xs:p-4
+      ${showLinks ? 'xs:bottom-0 xs:top-20' : 'xs:bottom-[100%]'}
+      xs:pt-4 xs:bg-opacity-70 xs:w-full xs:h-auto xs:backdrop-blur-sm xs:text-xl  xs:flex xs:flex-col xs:items-center lg:hidden xs:gap-10 xs:transition-all xs:duration-200 xs:ease-in-out xs:text-blue-950 xs:font-bold`}></Nav_LinksMob>
   </>
   );
 }
