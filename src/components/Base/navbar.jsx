@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="w-[92vw] mx-auto mb-5 rounded-b-2xl sticky top-0 z-30 bg-opacity-60 backdrop-blur-lg shadow-lg bg-zinc-100 h-20 2xl:h-28 text-blue-950 py-3 lg:pl-10 lg:pr-24 sm:px-10 xs:px-4 xl:text-lg
     lg:text-md 2xl:text-3xl flex items-center justify-between font-sans">
       <Nav_Logo></Nav_Logo>
-      <Nav_Links className='xs:hidden lg:flex gap-12 font-normal' />
+      <Nav_Links className='xs:hidden lg:flex gap-12 font-bold' />
       <button onClick={() => setShowLinks(!showLinks)} className="basis-1/2 xs:flex xs:items-end xs:flex-col lg:hidden">
         <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
         <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
