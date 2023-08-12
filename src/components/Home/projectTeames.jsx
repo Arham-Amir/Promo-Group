@@ -23,7 +23,7 @@ const ProjectTeames = () => {
   ]
   return (
     <section className="">
-      <section id='services' className="bg-[url('/image/businesses-background.png')] w-[90%] mx-auto my-10 flex flex-col justify-center items-center py-10">
+      <section id='businesses' className="bg-[url('/image/businesses-background.png')] w-[90%] mx-auto my-10 flex flex-col justify-center items-center py-10">
         <h1 className="sm:text-3xl xs:text-2xl 2xl:text-6xl font-bold text-indigo-950">BUSINESSES </h1>
         <img src="/image/divider.png" className="h-28 w-auto" alt="divider_Line" />
         {data.map((el, i) => {

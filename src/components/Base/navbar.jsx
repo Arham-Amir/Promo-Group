@@ -11,7 +11,7 @@ const Navbar = () => {
     lg:text-md 2xl:text-3xl flex items-center justify-between font-sans">
       <Nav_Logo></Nav_Logo>
       <Nav_Links className='xs:hidden lg:flex gap-12 font-bold' />
-      <button onClick={() => setShowLinks(!showLinks)} className="basis-1/2 xs:flex xs:items-end xs:flex-col lg:hidden">
+      <button onClick={() => setShowLinks(!showLinks)} className="basis-1/4 xs:flex xs:items-end xs:flex-col lg:hidden">
         <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
         <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
         <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
