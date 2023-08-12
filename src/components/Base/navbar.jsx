@@ -1,7 +1,7 @@
 'use client'
 import Nav_Logo from "@components/Base/nav_logo";
 import Nav_Links from "@components/Base/nav_links";
-import Nav_LinksMob from "@components/Base/nav_LinksMob";
+import Nav_LinksMob from "@components/Base/nav_linksMob";
 import { useState } from "react";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
