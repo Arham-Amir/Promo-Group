@@ -2,13 +2,17 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { RevealUp } from '@utilities/animation';
+
 const ContactUsPage = () => {
   function handleClick() {
     toast('Your responce send successfully!')
   }
   return (
     <section id='contactus' className='mb-10 text-center py-14  bg-[#0A1128]'>
-      <section className='hover-underline-animation after:bg-white mx-auto p-3 text-5xl text-white text-center font-bold inline-block'>Contact <span className='font-normal'>Us</span></section>
+      <RevealUp>
+        <section className='hover-underline-animation after:bg-white mx-auto p-3 text-5xl text-white text-center font-bold inline-block'>Contact <span className='font-normal'>Us</span></section>
+      </RevealUp>
       <section className='w-3/5 mx-auto my-12 flex flex-col items-center gap-10 text-white'>
         <section className='w-full flex lg:flex-row xs:flex-col gap-10'>
           <input className='lg:basis-1/2 border-b-2 bg-transparent h-10 py-5 px-2 focus-within:outline-none rounded-lg' type="text" placeholder='First Name' />

@@ -13,6 +13,9 @@ module.exports = {
         'ms': '570px',
         '3xl': '2000px'
       },
+      fontFamily: {
+        sans: ['var(--font-roboto)']
+      }
     },
   },
   plugins: [],

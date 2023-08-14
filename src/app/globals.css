@@ -62,7 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:30%
+    width: 30%
   }
 
   .center-highlight {
@@ -74,6 +74,16 @@
     /* Apply blur effect */
   }
 
+  .card {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 150ms;
+  }
+
+  .card.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
 }
 

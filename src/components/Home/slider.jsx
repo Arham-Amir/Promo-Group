@@ -1,7 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react';
-import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { AiOutlineLine } from 'react-icons/ai';
 import Image from "next/image"
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -27,7 +25,7 @@ const Slider = () => {
         className="object-cover w-full xs:h-[100vh] 2xl:h-[90vh]" alt="Slider1"
       />
       <h1
-       className='absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 text-white xl:text-4xl lg:text-2xl ,md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 '>
+        className='absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 text-white xl:text-4xl lg:text-2xl ,md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 '>
         Welcome to {' '}
         <span><Typewriter
           words={['Promo Group Website ...', 'Promo Group World ...']}

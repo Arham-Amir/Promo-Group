@@ -6,7 +6,9 @@ import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
 
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900'], })
+const roboto = Roboto({ subsets: ['latin'],
+weight: ['100', '300', '400', '500', '700', '900'],
+variable:'--font-roboto' })
 
 export const metadata = {
   title: 'Promo Group',
@@ -16,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.variable} font-sans`}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
         <ContactPopUpBtn></ContactPopUpBtn>
