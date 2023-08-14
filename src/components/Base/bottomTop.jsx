@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
@@ -22,7 +21,7 @@ const BottomTop = (props = {}) => {
       </section>
       <section className="py-4  flex justify-start">
         <section className="text-start flex gap-3 flex-col">
-          <h1 className="text-2xl pb-5 lg:border-b-0">Quick Links</h1>
+          <h1 className="hover-underline-animation after:bg-white text-2xl pb-5 lg:border-b-0">Quick Links</h1>
           <Link href='/' className="text-slate-200 hover:text-white text-md">Home</Link>
           <Link href='#services' className="text-slate-200 hover:text-white text-md">Services</Link>
           <Link href='#contactus' className="text-slate-200 hover:text-white text-md">Contact Us</Link>
@@ -30,7 +29,7 @@ const BottomTop = (props = {}) => {
         </section>
       </section>
       <section className="py-4 basis-1/3 lex flex-col items-start gap-3">
-        <h1 className="text-2xl pb-5 lg:border-b-0  xs:mb-4">Contact-Us</h1>
+        <h1 className="hover-underline-animation after:bg-white text-2xl pb-5 lg:border-b-0  xs:mb-4">Contact-Us</h1>
         <section className="flex lg:flex-row  xs:flex-col w-full gap-4  pb-4 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
           <p className="text-slate-200 hover:text-white w-[140px]">Whatsapp:</p>
           <section className="flex gap-2 items-center w-fit break-words text-left">

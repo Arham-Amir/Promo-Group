@@ -7,10 +7,10 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
 
   return (<>
-    <nav className="w-[92vw] mx-auto mb-5 rounded-b-2xl sticky top-0 z-30 bg-opacity-60 backdrop-blur-lg shadow-lg bg-zinc-100 h-20 2xl:h-28 text-blue-950 py-3 lg:pl-10 lg:pr-24 sm:px-10 xs:px-4 xl:text-lg
+    <nav className="w-[92vw] mx-auto mb-5 rounded-b-2xl fixed top-0 left-1/2 -translate-x-1/2 z-30 bg-opacity-60 backdrop-blur-lg shadow-lg bg-zinc-100 h-20 2xl:h-28 text-blue-950 py-3 lg:pl-10 lg:pr-24 sm:px-10 xs:px-4 xl:text-lg
     lg:text-md 2xl:text-3xl flex items-center justify-between font-sans">
       <Nav_Logo></Nav_Logo>
-      <Nav_Links className='xs:hidden lg:flex gap-12 font-bold' />
+      <Nav_Links className='xs:hidden lg:flex gap-12 font-semibold' />
       <button onClick={() => setShowLinks(!showLinks)} className="basis-1/4 xs:flex xs:items-end xs:flex-col lg:hidden">
         <p className="w-5 border-t-2 border-blue-950 mb-1"></p>
         <p className="w-5 border-t-2 border-blue-950 mb-1"></p>

@@ -22,12 +22,12 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="relative mx-2">
+    <div className="relative">
       <button onClick={() => handleSlideChange((currImg - 1 + imgs.length) % imgs.length)} className='absolute top-1/2 left-6'>
         <BsFillArrowLeftCircleFill className='text-white' size={46} />
       </button>
       <Image src={imgs[currImg]} width={0} height={0}
-        className="object-cover w-full xs:h-[80vh] 2xl:h-[90vh]" alt="Slider1"
+        className="object-cover w-full xs:h-[100vh] 2xl:h-[90vh]" alt="Slider1"
       />
       <button onClick={() => handleSlideChange((currImg + 1) % imgs.length)} className='absolute top-1/2 right-6'>
         <BsFillArrowRightCircleFill className='text-white' size={46} />
