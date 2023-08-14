@@ -24,7 +24,7 @@ const ProjectTeames = () => {
   return (
     <section className="">
       <section id='businesses' className="bg-[url('/image/businesses-background.png')] w-[90%] mx-auto my-10 flex flex-col justify-center items-center py-10">
-        <h1 class="hover-underline-animation after:bg-indigo-800 hover:text-indigo-800 sm:text-3xl xs:text-2xl 2xl:text-6xl font-bold text-indigo-950">
+        <h1 className="hover-underline-animation after:bg-indigo-800 hover:text-indigo-800 sm:text-3xl xs:text-2xl 2xl:text-6xl font-bold text-indigo-950">
           BUSINESSES
         </h1>
 

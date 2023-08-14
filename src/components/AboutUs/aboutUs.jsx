@@ -1,6 +1,6 @@
 'use client'
-import ImgCards from "@components/AboutUs/imgCards";
-import VideoSection from "@components/AboutUs/videoSection";
+import ImgCards from "@components/AboutUs/imgCards.jsx";
+import VideoSection from "@components/AboutUs/videoSection.jsx";
 import { useState } from "react";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 
