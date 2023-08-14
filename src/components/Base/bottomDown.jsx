@@ -1,4 +1,4 @@
-const BottomDown = (props = {}) => {
+const BottomDown = () => {
   return (
     <section className="bg-slate-300 p-6 flex-center text-indigo-950 lg:text-lg xs:text-sm">
       <p>

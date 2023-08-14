@@ -1,9 +1,9 @@
-import BottomTop from "@components/Base/bottomTop";
-import BottomDown from "@components/Base/bottomDown";
+import BottomTop from "@components/Base/bottomTop.jsx";
+import BottomDown from "@components/Base/bottomDown.jsx";
 
 const Footer = () => {
   return (
-    <section className="">
+    <section>
       <BottomTop></BottomTop>
       <BottomDown></BottomDown>
     </section>

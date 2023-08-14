@@ -1,7 +1,7 @@
 import './globals.css'
 import { Roboto } from 'next/font/google'
-import Navbar from '@components/Base/navbar'
-import Footer from '@components/Base/footer'
+import Navbar from '@components/Base/navbar.jsx'
+import Footer from '@components/Base/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
 

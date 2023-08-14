@@ -4,7 +4,7 @@ import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import { ImWhatsapp } from 'react-icons/im'
 
 
-const BottomTop = (props = {}) => {
+const BottomTop = () => {
   return (
     <section className="2xl:text-2xl 2xl:h-auto lg:h-auto xs:h-auto px-6 pt-12 pb-16 text-white bg-gradient-to-br from-indigo-950 to-sky-600
     flex lg:justify-around lg:flex-row xs:flex-col">
