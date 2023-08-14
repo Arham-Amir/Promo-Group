@@ -56,6 +56,25 @@
 
   /* Hover Animation End */
 
+  /* OwlCarouselBlur.css */
+  .item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30%
+  }
+
+  .center-highlight {
+    border: 2px solid black;
+  }
+
+  .blur {
+    filter: blur(5px);
+    /* Apply blur effect */
+  }
+
+
 }
 
 @layer base {
