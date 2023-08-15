@@ -40,7 +40,7 @@ const RevealRight = ({ children }) => {
         initial="hidden"
         whileInView={'visible'}
         exit="hidden"
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
       >
         {children}
       </motion.section>

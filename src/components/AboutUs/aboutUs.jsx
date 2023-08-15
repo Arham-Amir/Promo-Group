@@ -22,14 +22,16 @@ const AboutUs = () => {
           <RevealRight>
             <h1 className="hover-underline-animation after:bg-indigo-800 hover:text-indigo-800 2xl:text-4xl 3xl:text-5xl text-3xl font-bold w-fit pb-2">Hello, We are Promo Group</h1>
             <section className="flex flex-col gap-5 text-lg 2xl:text-2xl 3xl:text-3xl">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptates ducimus sapiente voluptatem praesentium repellat, est aliquid provident ut enim qui, assumenda inventore quasi.</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptates ducimus sapiente voluptatem praesentium repellat, est aliquid provident ut enim qui, assumenda inventore quasi.</p>
+              <p>As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector.
+              </p>
+              <p>Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products.
+              </p>
             </section>
           </RevealRight>
         </section>
         <section className="basis-1/2 h-auto">
           <RevealRight>
-            <ImgCards img='/image/about_pic.png' name='Ahsan Ali' position='Accountant' />
+            <ImgCards img='/image/about_pic.png' />
           </RevealRight>
         </section>
       </section>

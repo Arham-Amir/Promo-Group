@@ -34,7 +34,7 @@ const Slider = () => {
           cursorStyle='_'
           typeSpeed={120}
           deleteSpeed={50}
-          delaySpeed={1000}
+          delaySpeed={300}
         /></span>
       </h1>
       <section className='absolute gap-3 bottom-8 flex justify-center text-gray-500 left-1/2 -translate-x-1/2'>

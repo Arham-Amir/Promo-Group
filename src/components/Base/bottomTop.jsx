@@ -6,7 +6,7 @@ import { ImWhatsapp } from 'react-icons/im'
 
 const BottomTop = () => {
   return (
-    <section className="2xl:text-2xl 2xl:h-auto lg:h-auto xs:h-auto px-6 pt-12 pb-16 text-white bg-gradient-to-br from-indigo-950 to-sky-600
+    <section className="2xl:text-xl 2xl:h-auto lg:h-auto xs:h-auto px-6 pt-12 pb-16 text-white bg-gradient-to-br from-indigo-950 to-sky-600
     flex lg:justify-around lg:flex-row xs:flex-col">
       <section className="py-4  flex flex-col items-center gap-3">
         <Image src={'/image/nav_logo.png'} width={0} height={0}
@@ -30,18 +30,18 @@ const BottomTop = () => {
       </section>
       <section className="py-4 basis-1/3 lex flex-col items-start gap-3">
         <h1 className="hover-underline-animation after:bg-white text-2xl pb-5 lg:border-b-0  xs:mb-4">Contact-Us</h1>
-        <section className="flex lg:flex-row  xs:flex-col w-full gap-4  pb-4 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
+        <section className="flex lg:flex-row  xs:flex-col w-full gap-4  pb-2 mb-2 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
           <p className="text-slate-200 hover:text-white w-[140px]">Whatsapp:</p>
           <section className="flex gap-2 items-center w-fit break-words text-left">
             <Link href={'https://wa.me/+923004439445'} target='_blank'><ImWhatsapp className='text-green-500' size={22} /></Link>
             <span style={{ maxWidth: "100%" }}>+92 300 4439445</span>
           </section>
         </section>
-        <section className="flex lg:flex-row xs:flex-col w-full gap-4 pb-4 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
+        <section className="flex lg:flex-row xs:flex-col w-full gap-4 pb-2 mb-2 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
           <p className="text-slate-200 hover:text-white  w-[140px]">Email:</p>
           <p className="text-slate-200 w-fit hover:text-white">promogroup786@gmail.com</p>
         </section>
-        <section className="flex lg:flex-row xs:flex-col w-full gap-4 pb-4 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
+        <section className="flex lg:flex-row xs:flex-col w-full gap-4 pb-2 mb-2 xs:border-b-2 lg:border-b-0 xs:border-slate-400">
           {/* <p className="text-slate-200 hover:text-white w-[140px]">Address:</p> */}
           <p className="text-slate-200 hover:text-white uppercase w-fit">
             60-J Block, DHA EME Sector, Multan Road, Lahore, Pakistan

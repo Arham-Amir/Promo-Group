@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (<>
     <nav className="w-[92vw] mx-auto mb-5 rounded-b-2xl fixed top-0 left-1/2 -translate-x-1/2 z-30 bg-opacity-60 backdrop-blur-lg shadow-lg bg-zinc-100 h-20 2xl:h-28 text-blue-950 py-3 lg:pl-10 lg:pr-24 sm:px-10 xs:px-4 xl:text-lg
-    lg:text-md 2xl:text-3xl flex items-center justify-between font-sans">
+    lg:text-md 2xl:text-xl flex items-center justify-between font-sans">
       <Nav_Logo></Nav_Logo>
       <Nav_Links className='xs:hidden lg:flex gap-12 font-semibold' />
       <button onClick={() => setShowLinks(!showLinks)} className="basis-1/4 xs:flex xs:items-end xs:flex-col lg:hidden">
