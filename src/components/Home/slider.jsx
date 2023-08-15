@@ -41,7 +41,7 @@ const Slider = () => {
         {imgs.map((_, index) => (
           <button key={index} onClick={() => handleSlideChange(index)}><Image src={imgs[index]} width={0} height={0}
             className="border border-white object-cover xs:w-[50px] xs:h-[50px]
-           md:h-[100px] md:w-[100px] 2xl:h-[190px] 2xl:w-[190px]" alt="Slider1"
+           md:h-[60px] md:w-[60px] 2xl:h-[80px] 2xl:w-[80px] 3xl:h-[100px] 3xl:w-[100px]" alt="Slider1"
           /></button>
         ))}
       </section>
