@@ -1,5 +1,5 @@
 import TeamCard from "@components/Home/teamCard.jsx";
-import { RevealLeft, RevealRight, RevealUp } from "@utilities/animation";
+import { RevealRight, RevealUp } from "@utilities/animation";
 const ProjectTeames = () => {
   const data = [
     {
@@ -32,17 +32,9 @@ const ProjectTeames = () => {
         </RevealUp>
         <img src="/image/divider.png" className="h-28 w-auto" alt="divider_Line" />
         {data.map((el, i) => {
-          if (i % 2 == 0) {
-            return <RevealRight>
-              <TeamCard key={i} heading={el.heading} img={el.img} description={el.description} link={el.link} class={`xs:flex-col-reverse ${i % 2 == 0 ? 'md:flex-row-reverse' : 'md:flex-row'} md:py-16 xs:py-12 2xl:py-20`} />
-            </RevealRight>
-          }
-          else {
-            return <RevealLeft>
-              <TeamCard key={i} heading={el.heading} img={el.img} description={el.description} link={el.link} class={`xs:flex-col-reverse ${i % 2 == 0 ? 'md:flex-row-reverse' : 'md:flex-row'} md:py-16 xs:py-12 2xl:py-20`} />
-            </RevealLeft>
-          }
-
+          return <RevealRight>
+            <TeamCard key={i} heading={el.heading} img={el.img} description={el.description} link={el.link} class={`xs:flex-col-reverse ${i % 2 == 0 ? 'md:flex-row-reverse' : 'md:flex-row'} md:py-16 xs:py-12 2xl:py-20`} />
+          </RevealRight>
         })}
       </section>
     </section>

@@ -3,7 +3,7 @@ import ImgCards from "@components/AboutUs/imgCards.jsx";
 import VideoSection from "@components/AboutUs/videoSection.jsx";
 import { useState } from "react";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
-import { RevealLeft, RevealRight } from "@utilities/animation";
+import { RevealRight } from "@utilities/animation";
 
 const AboutUs = () => {
   const data = [
@@ -28,9 +28,9 @@ const AboutUs = () => {
           </RevealRight>
         </section>
         <section className="basis-1/2 h-auto">
-          <RevealLeft>
+          <RevealRight>
             <ImgCards img='/image/about_pic.png' name='Ahsan Ali' position='Accountant' />
-          </RevealLeft>
+          </RevealRight>
         </section>
       </section>
       <section className="my-5 flex gap-3 relative" >
