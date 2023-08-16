@@ -31,6 +31,17 @@
     display: block;
   }
 
+  .center {
+    transform: translateX(0);
+  }
+
+  .side {
+    transform: translateX(-100%); /* Start with videos off to the left */
+  }
+
+  .rotate-y-45{
+    transform: rotateY(-55deg);
+  }
   /* Hover Animation */
   .hover-underline-animation {
     display: inline-block;
