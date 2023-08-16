@@ -8,8 +8,8 @@ export default function Home() {
     <main >
       <Slider />
       <ProjectTeames />
-      <ContactUsPage />
       <AboutUs />
+      <ContactUsPage />
     </main>
   )
 }

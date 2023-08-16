@@ -9,7 +9,7 @@ const ContactUsPage = () => {
     toast('Your responce send successfully!')
   }
   return (
-    <section id='contactus' className='mb-10 text-center py-14  bg-[#0A1128]'>
+    <section id='contactus' className='my-10 text-center py-14  bg-[#0A1128]'>
       <RevealUp>
         <section className='hover-underline-animation after:bg-white mx-auto p-3 text-5xl text-white text-center font-bold inline-block'>Contact <span className='font-normal'>Us</span></section>
       </RevealUp>

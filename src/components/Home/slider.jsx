@@ -37,14 +37,6 @@ const Slider = () => {
           delaySpeed={300}
         /></span>
       </h1>
-      <section className='absolute gap-3 bottom-8 flex justify-center text-gray-500 left-1/2 -translate-x-1/2'>
-        {imgs.map((_, index) => (
-          <button key={index} onClick={() => handleSlideChange(index)}><Image src={imgs[index]} width={0} height={0}
-            className="border border-white object-cover xs:w-[50px] xs:h-[50px]
-           md:h-[60px] md:w-[60px] 2xl:h-[80px] 2xl:w-[80px] 3xl:h-[100px] 3xl:w-[100px]" alt="Slider1"
-          /></button>
-        ))}
-      </section>
     </section>
   );
 };
