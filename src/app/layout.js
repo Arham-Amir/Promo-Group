@@ -6,9 +6,10 @@ import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
 
 
-const nunito = Nunito_Sans({ subsets: ['latin'],
-weight: ['200', '300', '400', '500', '600', '700','800', '900', '1000'],
-variable:'--font-roboto' })
+const nunito = Nunito_Sans({
+  subsets: ['latin'],
+  variable: '--font-roboto'
+})
 
 export const metadata = {
   title: 'Promo Group',
