@@ -43,7 +43,7 @@ const AboutUs = () => {
           if (currVideo == i) {
             return (
               <VideoSection className='shadow-lg lg:h-[400px] lg:w-[680px]
-              xs:w-[82vw] xs:h-[315px] ms:w-[500px] ms:h-[345px] md:w-[700px] md:h-[375px] 2xl:w-[1200px] 2xl:h-[750px]' classP='z-20'  key={i} video={el}>
+              xs:w-[82vw] xs:h-[315px] ms:w-[500px] ms:h-[345px] md:w-[700px] md:h-[375px] 2xl:w-[1100px] 2xl:h-[500px]' classP='z-20'  key={i} video={el}>
                 <button onClick={() => handleSlideChange('inc')} className='absolute top-1/2 left-6'>
                   <BsFillArrowLeftCircleFill className='text-black' size={46} />
                 </button>
@@ -59,7 +59,7 @@ const AboutUs = () => {
           // }
           else {
             return (<VideoSection className="opacity-50 lg:w-[380px] pointer-events-none
-            xs:w-[75vw] xs:h-[285px] ms:w-[450px] ms:h-[315px] md:w-[550px] md:h-[315px] 2xl:w-[850px] 2xl:h-[550px]"
+            xs:w-[75vw] xs:h-[285px] ms:w-[450px] ms:h-[315px] md:w-[550px] md:h-[315px] 2xl:w-[850px] 2xl:h-[420px]"
             key={i} video={el}></VideoSection>)
           }
 

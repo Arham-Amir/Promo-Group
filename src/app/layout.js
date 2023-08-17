@@ -1,13 +1,13 @@
 import './globals.css'
-import { Roboto } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
 import Navbar from '@components/Base/navbar.jsx'
 import Footer from '@components/Base/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
 
 
-const roboto = Roboto({ subsets: ['latin'],
-weight: ['100', '300', '400', '500', '700', '900'],
+const nunito = Nunito_Sans({ subsets: ['latin'],
+weight: ['200', '300', '400', '500', '600', '700','800', '900', '1000'],
 variable:'--font-roboto' })
 
 export const metadata = {
@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} font-sans`}>
+      <body className={`${nunito.variable} font-sans`}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
         <ContactPopUpBtn></ContactPopUpBtn>
