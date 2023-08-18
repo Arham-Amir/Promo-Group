@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from "next/image"
 import { Typewriter } from 'react-simple-typewriter';
+import { GoDotFill } from 'react-icons/go';
 
 const Slider = () => {
   const imgs = ['/image/slider1.jpg', '/image/slider2.jpg', '/image/slider3.jpg', '/image/slider4.jpg', '/image/slider5.jpg'];
@@ -37,6 +38,11 @@ const Slider = () => {
           delaySpeed={300}
         /></span>
       </h1>
+      <section className='absolute bottom-8 flex justify-center text-gray-700 left-1/2 transform -translate-x-1/2'>
+        {imgs.map((_, index) => (
+          <GoDotFill key={index} className={`${currImg === index ? 'text-white' : ''}`} size={20} />
+        ))}
+      </section>
     </section>
   );
 };
