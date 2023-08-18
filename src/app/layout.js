@@ -4,6 +4,7 @@ import Navbar from '@components/Base/navbar.jsx'
 import Footer from '@components/Base/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
+import Head from 'next/head'
 
 
 const nunito = Nunito_Sans({
@@ -17,8 +18,26 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
+      <Head>
+        <meta charset="UTF-8" />
+        <meta content="Promo Garlic" property="title" />
+        <meta content="Promo Garlic" property="twitter:title" />
+        <meta content="Promo Garlic" property="facebook:title" />
+        <meta content="Promo Garlic" property="youtube:title" />
+        <meta content="Promo Garlic" property="linkedin:title" />
+        <meta name="description" content="As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector. Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products." />
+        <meta name="keywords" content="PromoGroup, RealEstate, Construction, Garlic, Bricks, Farms" />
+        <meta name="description" content="As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector. Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products." />
+        <meta name="og:description" content="As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector. Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products." />
+        <meta name="twitter:description" content="As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector. Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products." />
+        <meta name="keywords" content="PromoGroup, RealEstate, Construction, Garlic, Bricks, Farms" />
+        <meta name="author" content="Umar Latif" />
+        <meta property="og:type" content="website" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
       <body className={`${nunito.variable} font-sans`}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>

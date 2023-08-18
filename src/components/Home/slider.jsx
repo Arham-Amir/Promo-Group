@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Typewriter } from 'react-simple-typewriter';
 
 const Slider = () => {
-  const imgs = ['/image/slider1.png', '/image/slider2.png', '/image/slider3.png', '/image/slider4.png'];
+  const imgs = ['/image/slider1.jpg', '/image/slider2.jpg', '/image/slider3.jpg', '/image/slider4.jpg', '/image/slider5.jpg'];
   const [currImg, setCurrImg] = useState(0);
 
   function handleSlideChange(newIndex) {
