@@ -21,6 +21,7 @@
     visibility: visible;
   }
 
+
   .flex-center {
     display: flex;
     justify-content: center;
@@ -36,12 +37,14 @@
   }
 
   .side {
-    transform: translateX(-100%); /* Start with videos off to the left */
+    transform: translateX(-100%);
+    /* Start with videos off to the left */
   }
 
-  .rotate-y-45{
+  .rotate-y-45 {
     transform: rotateY(-55deg);
   }
+
   /* Hover Animation */
   .hover-underline-animation {
     display: inline-block;
@@ -69,9 +72,6 @@
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
 
   body {
     @apply bg-[url('/image/bodyBg.png')];

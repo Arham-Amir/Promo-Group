@@ -1,5 +1,6 @@
 import TeamCard from "@components/Home/teamCard.jsx";
 import { RevealRight, RevealUp } from "@utilities/animation";
+import Image from "next/image";
 const ProjectTeames = () => {
   const data = [
     {
@@ -30,7 +31,7 @@ const ProjectTeames = () => {
             BUSINESSES
           </h1>
         </RevealUp>
-        <img src="/image/divider.png" className="h-28 w-auto" alt="divider_Line" />
+        <Image src="/image/divider.png" width={0} height={0} className="h-28 w-auto" alt="divider_Line" />
         {data.map((el, i) => {
           return <RevealRight>
             <TeamCard key={i} heading={el['heading']} img={el['img']} description={el['description']} link={el['link']} class={`xs:flex-col-reverse ${i % 2 == 0 ? 'md:flex-row-reverse' : 'md:flex-row'} md:py-16 xs:py-12 2xl:py-20`} />

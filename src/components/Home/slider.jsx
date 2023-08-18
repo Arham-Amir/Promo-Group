@@ -21,7 +21,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <section className="relative">
+    <section  id='home' className="relative">
       <Image src={imgs[currImg]} width={0} height={0}
         className="object-cover w-full xs:h-[100vh] 2xl:h-[90vh]" alt="Slider1"
       />
