@@ -14,7 +14,7 @@ const ProjectTeames = () => {
       heading: 'Promo Developers',
       img: "/image/promo-developer.jpg",
       description: `We are trusted partner for all your construction needs. With our expertise, dedication to quality, and commitment to client satisfaction, we ensure that every project we undertake is a resounding success. Contact us today to bring your construction vision to life.`,
-      link: 'https://www.promobrick.com/'
+      link: 'https://www.promodevelopers.com/'
     },
     {
       heading: 'Promo Garlic',

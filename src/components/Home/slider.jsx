@@ -1,57 +1,29 @@
 'use client'
-import { useState } from 'react';
 import Image from "next/image"
-import { Typewriter } from 'react-simple-typewriter';
-import Link from 'next/link';
+import Link from "next/link";
 
 const Slider = () => {
-  const imgs = ['/image/slider1.jpg', '/image/slider3.jpg', '/image/slider4.jpg', '/image/slider5.jpg',];
-  const paths = [
-    ['polygon(0 0, 30% 0, 20% 100%, 0% 100%)',
-      'polygon(30% 0, 55% 0, 45% 100%, 20% 100%)',
-      'polygon(55% 0, 80% 0, 70% 100%, 45% 100%)',
-      'polygon(80% 0, 100% 0, 100% 100%, 70% 100%)'],
-    ['polygon(0 0, 39% 0, 29% 100%, 0% 100%)',
-      'polygon(33% 0, 58% 0, 48% 100%, 23% 100%)',
-      'polygon(58% 0, 83% 0, 73% 100%, 48% 100%)',
-      'polygon(83% 0, 100% 0, 100% 100%, 73% 100%)'],
-    ['polygon(0 0, 27% 0, 17% 100%, 0% 100%)',
-      'polygon(27% 0, 64% 0, 54% 100%, 17% 100%)',
-      'polygon(58% 0, 83% 0, 73% 100%, 48% 100%)',
-      'polygon(83% 0, 100% 0, 100% 100%, 73% 100%)'],
-    ['polygon(0 0, 27% 0, 17% 100%, 0% 100%)',
-      'polygon(27% 0, 52% 0, 42% 100%, 17% 100%)',
-      'polygon(52% 0, 89% 0, 79% 100%, 42% 100%)',
-      'polygon(89% 0, 100% 0, 100% 100%, 79% 100%)'],
-    ['polygon(0 0, 27% 0, 17% 100%, 0% 100%)',
-      'polygon(27% 0, 52% 0, 42% 100%, 17% 100%)',
-      'polygon(52% 0, 71% 0, 61% 100%, 42% 100%)',
-      'polygon(71% 0, 100% 0, 100% 100%, 61% 100%)']
+  const imgs = ['/image/slider1.jpg', '/image/slider3.jpg', '/image/slider4.jpg', '/image/slider5.jpg'];
+  const businesses = [
+    ['Promo Developers', 'https://www.promodevelopers.com/'],
+    ['Promo Brick', 'https://www.promobrick.com/'],
+    ['Promo Garlic', 'http://promogarlic.com/'],
+    ['Promo Farms', '/']
   ]
-  const [clipPath, setClipPath] = useState(paths[0]);
   return (
-    <section id='home' className="relative w-screen h-screen flex overflow-hidden box-border">
+    <section id='home' className="relative w-screen xs:h-auto md:h-screen flex md:flex-row xs:flex-col overflow-hidden box-border">
       {imgs.map((img, i) => (
         <section key={i}
-          onMouseEnter={() => setClipPath(paths[i + 1])} onMouseLeave={() => setClipPath(paths[0])} style={{ '--path': clipPath[i] }} className={`sliderImg border-r-6 border-slate-500`}>
-          <Image src={img} width={0} height={0} className="relative grayscale-[50] hover:grayscale-0 object-cover w-full h-full" alt="Slider1" />
+          className={`relative xs:h-[30vh] md:h-full md:basis-1/4 md:hover:basis-1/3 transition-all duration-300 md:sliderImg border-r-6 border-slate-500`}>
+          <Image src={img} width={0} height={0} className="grayscale-[50] hover:grayscale-0 object-cover w-full h-full" alt="Slider1" />
+          <section className='xs:backdrop-blur-[1px] flex flex-col justify-center items-center gap-4 absolute md:bottom-6 xs:bottom-0 lg:text-right xs:text-center text-white 2xl:text-4xl md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 w-[90%] left-1/2 -translate-x-1/2'>
+            <h1 className='w-full'>{businesses[i][0]}
+            </h1>
+            <p className='lg:block md:hidden text-[0.7em] font-normal'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ratione fuga quisquam, reiciendis</p>
+            <Link href={businesses[i][1]} target="_blank" className='bg-indigo-950 xpy-1 px-4 min-w-[90%] text-center -skew-x-12 text-[0.7em]'><h1 className='skew-x-12'>Read More</h1></Link>
+          </section>
         </section>
       ))}
-      <section className='flex flex-col justify-center items-center gap-4 absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 text-white xl:text-4xl lg:text-2xl ,md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 '>
-        <h1>Welcome to {' '}
-          <span><Typewriter
-            words={['Promo Group Website ...', 'Promo Group World ...']}
-            loop={0}
-            cursor
-            cursorStyle='_'
-            typeSpeed={120}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          /></span>
-        </h1>
-        <Link href={'#businesses'} className='bg-indigo-950 w-fit px-8 py-4 rounded-2xl text-lg'>Our Businesses</Link>
-      </section>
-
     </section>
   );
 };
