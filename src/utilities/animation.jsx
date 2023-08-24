@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 const RevealUp = ({ children }) => {
 
   return (
-    <section className='overflow-hidden'>
+    <section className=''>
       <motion.section
         variants={{
           hidden: { opacity: 0, y: 75 },

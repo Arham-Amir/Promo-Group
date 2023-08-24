@@ -15,6 +15,10 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-roboto)']
+      },
+      flexBasis: {
+        '3/10': '25%',
+        '2/10': '25%',
       }
     },
   },
