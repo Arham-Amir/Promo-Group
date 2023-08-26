@@ -5,29 +5,20 @@ import Footer from '@components/Base/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
 
-
 const nunito = Nunito_Sans({
   subsets: ['latin'],
   variable: '--font-roboto'
 })
 
 export const metadata = {
-  author: "Umar Latif",
   title: 'Promo Group',
+  author: "Umar Latif",
   description: 'As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector. Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products.',
   keyWords: "PromoGroup, RealEstate, Construction, Garlic, Bricks, Farms, Promo Garlic, Promo Farms, Promo Developers, Developers, Promo Bricks",
   verification: {
-    google: "r5nOt5aR0KpAbyVScqfWu95oG-P6QqFSuUCzQCOPFJk",
-  },
-  openGraph: {
-    title: "Promo Group",
-    site_name: "Promo Group",
-    url: "https://promogroup.com.pk/",
-    description: "As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector. Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products.",
-    image: "/image/nav_logo.png",
+    google: "google-site-verification=r5nOt5aR0KpAbyVScqfWu95oG-P6QqFSuUCzQCOPFJk",
   }
 }
-
 export default function RootLayout({ children }) {
 
   return (

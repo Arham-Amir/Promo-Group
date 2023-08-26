@@ -3,6 +3,7 @@ import VideoSection from "@components/AboutUs/videoSection.jsx";
 import { useEffect, useState } from "react";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { RevealRight } from "@utilities/animation";
+import Galary from "@components/Galary/galary";
 
 const AboutUs = () => {
   const [data, setData] = useState([
@@ -38,6 +39,7 @@ const AboutUs = () => {
           </p>
         </RevealRight>
       </section>
+      <Galary />
       <section className="my-5 flex items-center gap-3 relative overflow-x-hidden" >
         {data.map((el, i) => {
           if (currVideo == i) {

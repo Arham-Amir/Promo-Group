@@ -21,7 +21,7 @@
     visibility: visible;
   }
 
-  .sliderImg:hover > section{
+  .sliderImg:hover>section {
     width: 75%;
   }
 
@@ -72,6 +72,31 @@
   }
 
   /* Hover Animation End */
+  /* Gallary Images Animation */
+
+  .scroll-section {
+    animation: scrollCards 10s linear infinite alternate;
+  }
+
+
+  .scroll-section:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scrollCards {
+
+    0%,
+    100% {
+      transform: translateX(var(--width));
+    }
+
+    50% {
+      transform: translateX(calc(-35vw * var(--imgs)));
+    }
+  }
+
+  /* Gallary Images Animation End */
+
 }
 
 @layer base {
