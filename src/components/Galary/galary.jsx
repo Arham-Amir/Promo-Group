@@ -19,19 +19,12 @@ const Galary = () => {
 
 function ImgCard(props = {}) {
   return (
-    <section
-      className={`${props.className} mb-10 h-80 min-w-[30vw] max-w-[30vw] hover:h-96 hover:min-w-[40vw] transition-all duration-150`}
+    <section className={`${props.className} mb-10 2xl:h-[35vh] xs:h-44 sm:h-56 md:h-80 min-w-[30vw] max-w-[30vw] hover:md:h-96 hover:sm:h-72 hover:xs:h-56 hover:2xl:h-[45vh] hover:min-w-[40vw] transition-all duration-150 border-4 border-white`}
       onMouseEnter={() => props.setIsHovered(true)}
-      onMouseLeave={() => props.setIsHovered(false)}
-    >
-      <div className="overflow-hidden card-img h-full w-full">
-        <img
-          src={props.img}
-          alt="img/ISO.png"
-          className={`h-full w-full ${props.isHovered ? 'opacity-40' : 'opacity-100'}
-          hover:opacity-100 hover:shadow-lg hover:shadow-black transition-opacity duration-150`}
-        />
-      </div>
+      onMouseLeave={() => props.setIsHovered(false)}>
+      <section className="overflow-hidden card-img h-full w-full">
+        <img src={props.img} alt="img/ISO.png" className={`h-full w-full ${props.isHovered ? 'opacity-40' : 'opacity-100'} hover:opacity-100 hover:shadow-lg hover:shadow-black transition-opacity duration-150`} />
+      </section>
     </section>
   );
 }
