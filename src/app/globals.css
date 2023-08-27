@@ -4,21 +4,6 @@
 
 
 @layer utilities {
-  .nav_links a::before {
-    content: '';
-    @apply bg-indigo-950 absolute;
-    visibility: hidden;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: 0.3s;
-  }
-  .nav_links a:hover:before {
-    opacity: 1;
-    visibility: visible;
-  }
-
   .sliderImg:hover>section {
     width: 75%;
   }
