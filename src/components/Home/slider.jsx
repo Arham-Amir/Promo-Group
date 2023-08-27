@@ -15,7 +15,7 @@ const Slider = () => {
       {imgs.map((img, i) => (
         <section key={i}
           className={`relative xs:h-[38vh] ms:h-[32vh] md:h-full md:basis-1/4 ${i != imgs.length - 1 && 'md:border-r-8'} md:border-slate-500 md:hover:basis-1/3 transition-all duration-300 md:sliderImg`}>
-          <Image src={img} width={0} height={0} className="grayscale-[100%] hover:grayscale-0 object-cover w-full h-full" alt="Slider images" />
+          <Image src={img} loading="lazy" width={0} height={0} className="grayscale-[100%] hover:grayscale-0 object-cover w-full h-full" alt="Slider images" />
           <section className='xs:backdrop-blur-[1px] flex flex-col justify-center items-center gap-4 absolute md:bottom-6 xs:bottom-0 lg:text-right xs:text-center text-white 2xl:text-4xl md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 w-[90%] left-1/2 -translate-x-1/2'>
             <h1 className='w-full'>{businesses[i][0]}
             </h1>
