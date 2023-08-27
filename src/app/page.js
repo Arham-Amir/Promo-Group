@@ -20,9 +20,9 @@ export const metadata = {
 
 export default function Home(props = {}) {
   return (
-    <main className=" overflow-x-hidden">
+    <main className="">
       <Slider />
-      <ProjectTeames />
+      {/* <ProjectTeames /> */}
       <AboutUs />
       <ContactUsPage />
     </main>
