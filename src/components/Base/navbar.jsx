@@ -10,33 +10,33 @@ const Navbar = () => {
   const navRef = useRef(null);
   const navRef2 = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navRef2.current.classList.remove('block')
-          navRef2.current.classList.add('hidden')
-        } else {
-          navRef2.current.classList.remove('hidden')
-          navRef2.current.classList.add('block')
-        }
+    useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navRef2.current.classList.remove('block')
+            navRef2.current.classList.add('hidden')
+          } else {
+            navRef2.current.classList.remove('hidden')
+            navRef2.current.classList.add('block')
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0
       });
-    }, {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0
-    });
 
-    if (navRef.current) {
-      observer.observe(navRef.current);
-    }
-
-    return () => {
       if (navRef.current) {
-        observer.unobserve(navRef.current);
+        observer.observe(navRef.current);
       }
-    };
-  }, [])
+
+      return () => {
+        if (navRef.current) {
+          observer.unobserve(navRef.current);
+        }
+      };
+    }, [])
   useEffect(() => {
     if (ham) {
       document.body.classList.add('overflow-hidden');
@@ -49,23 +49,8 @@ const Navbar = () => {
   }, [ham]);
 
   return (<>
-    <section ref={navRef} className={`flex overflow-x-hidden flex-col md:absolute top-0 z-30 w-screen  backdrop-blur-[1px] xs:bg-gradient-to-b xs:from-black xs:to-gray-900 md:from-transparent md:to-transparent  xs:relative ${ham ? 'xs:h-screen' : 'md:h-auto'}`}>
-      <section className="flex justify-between xs:flex-col sm:flex-row sm:h-10 xs:h-14 2xl:h-14 items-center border-b border-slate-200 lg:w-[80vw]
-      xs:w-[90vw] mx-auto text-slate-50 px-2 2xl:py-4 xs:py-2">
-        <section className="flex flex-row gap-2 items-center object-cover 3xl:text-2xl">
-          <Link className="hover:text-white hover:-translate-y-1 transition-all duration-100" href='https://www.facebook.com' target="_blank"><BiLogoFacebook className="2xl:text-xl 3xl:text-4xl"></BiLogoFacebook></Link>
-          <Link className="hover:text-white hover:-translate-y-1 transition-all duration-100" href='https://www.instagram.com' target="_blank"><BiLogoInstagramAlt className="2xl:text-xl 3xl:text-4xl"></BiLogoInstagramAlt></Link>
-          <Link className="hover:text-white hover:-translate-y-1 transition-all duration-100" href='https://www.twitter.com' target="_blank"><BiLogoTwitter className="2xl:text-xl 3xl:text-4xl"></BiLogoTwitter></Link>
-          <Link className="hover:text-white hover:-translate-y-1 transition-all duration-100" href='https://www.youtube.com' target="_blank"><BiLogoYoutube className="2xl:text-xl 3xl:text-4xl"></BiLogoYoutube></Link>
-          <Link className="hover:text-white hover:-translate-y-1 transition-all duration-100" href='https://www.linkedin.com' target="_blank"><BiLogoLinkedin className="2xl:text-xl 3xl:text-4xl"></BiLogoLinkedin></Link>
-        </section>
-        <section className="flex flex-row gap-2 items-center object-cover 2xl:text-3xl">
-          <Link className="hover:text-white hover:scale-110 transition-all duration-100 text-sm 2xl:text-lg 3xl:text-xl flex flex-row gap-2 items-center" href='https://www.linkedin.com' target="_blank">
-            For Queries: <span className="flex flex-row items-center"><BiLogoWhatsapp className="2xl:text-xl 3xl:text-4xl"></BiLogoWhatsapp> +92 300 4439445</span>
-          </Link>
-        </section>
-      </section>
-      <nav className="xs:w-[90vw] lg:w-[80vw] mx-auto mb-5 rounded-b-2xl h-20 2xl:h-28 text-white py-3 lg:pl-8 lg:pr-12 xl:pl-10 xl:pr-24 sm:px-10 xs:px-4 xl:text-lg lg:text-md 2xl:text-2xl 3xl:text-3xl flex items-center justify-between font-sans">
+    <section ref={navRef} className={`flex overflow-x-hidden items-center justify-center md:absolute top-0 z-30 w-screen  backdrop-blur-[3px] xs:bg-gradient-to-b xs:from-black xs:to-gray-900 md:from-transparent md:to-transparent md:bg-black/10  xs:relative ${ham ? 'xs:h-screen' : 'md:h-auto'}`}>
+      <nav className="xs:w-[90vw] lg:w-[80vw] mx-auto rounded-b-2xl h-20 2xl:h-28 text-white py-3 lg:pl-8 lg:pr-12 xl:pl-10 xl:pr-24 sm:px-10 xs:px-4 xl:text-lg lg:text-md 2xl:text-2xl 3xl:text-3xl flex items-center justify-between font-sans">
         <Nav_Logo></Nav_Logo>
         <Nav_Links childClass = "px-3 py-1" className='xs:hidden md:flex md:gap-7 lg:gap-12 font-semibold' />
         <section onClick={() => { showHam(!ham) }} className="z-30 md:hidden xs:flex flex-col items-end justify-center gap-2 pr-4" >

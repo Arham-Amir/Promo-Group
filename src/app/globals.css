@@ -55,10 +55,22 @@
   }
 
   /* Hover Animation End */
+  .custom-scrollbar {
+    overflow-x: scroll;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-1 h-2;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-500;
+    border-radius: 4px;
+  }
   /* Gallary Images Animation */
 
   .scroll-section {
-    animation: scrollCards 10s linear infinite alternate;
+    /* animation: scrollCards 10s linear infinite alternate; */
   }
 
 

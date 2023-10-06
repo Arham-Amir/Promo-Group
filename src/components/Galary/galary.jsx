@@ -5,8 +5,8 @@ const Galary = () => {
   const [isHovered, setIsHovered] = useState(false);
   const width = '45vw';
   return (
-    <div className="overflow-hidden">
-      <div style={{ '--imgs': 3, '--width': width }} className="scroll-section flex gap-8 max-w-full flex-row items-center">
+    <div className="custom-scrollbar w-screen">
+      <div style={{ '--imgs': 3, '--width': width }} className=" mx-10 scroll-section flex gap-8 max-w-full flex-row flex-nowrap items-center">
         <ImgCard isHovered={isHovered} setIsHovered={setIsHovered} img='/image/slider1.jpg' />
         <ImgCard isHovered={isHovered} setIsHovered={setIsHovered} img='/image/slider2.jpg' />
         <ImgCard isHovered={isHovered} setIsHovered={setIsHovered} img='/image/slider3.jpg' />
@@ -19,7 +19,7 @@ const Galary = () => {
 
 function ImgCard(props = {}) {
   return (
-    <section className={`${props.className} mb-10 2xl:h-[35vh] xs:h-44 sm:h-56 md:h-80 min-w-[30vw] max-w-[30vw] hover:md:h-96 hover:sm:h-72 hover:xs:h-56 hover:2xl:h-[45vh] hover:min-w-[40vw] transition-all duration-150 border-4 border-white`}
+    <section className={`${props.className} mb-10 2xl:h-[35vh] xs:h-44 sm:h-56 md:h-80 md:min-w-[30vw] md:max-w-[30vw] xs:min-w-[45vw] xs:max-w-[45vw] hover:md:h-96 hover:sm:h-72 hover:xs:h-56 hover:2xl:h-[45vh] md:hover:min-w-[40vw] xs:hover:min-w-[55vw] transition-all duration-150 border-4 border-white`}
       onMouseEnter={() => props.setIsHovered(true)}
       onMouseLeave={() => props.setIsHovered(false)}>
       <section className="overflow-hidden card-img h-full w-full">

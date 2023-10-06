@@ -4,6 +4,7 @@ import Navbar from '@components/Base/navbar.jsx'
 import Footer from '@components/Base/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
+import { ArticleJsonLd } from 'next-seo';
 
 const nunito = Nunito_Sans({
   subsets: ['latin'],
@@ -30,12 +31,20 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${nunito.variable} font-sans w-screen relative`}>
+      <body className={`${nunito.variable} font-sans w-screen overflow-x-hidden relative`}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
         <ContactPopUpBtn></ContactPopUpBtn>
         {children}
         <Footer></Footer>
+        <ArticleJsonLd
+          useAppDir={true}
+          type="website"
+          url="https://promogroup.com.pk"
+          title="Promo Group"
+          authorName="Umar Latif"
+          description="Promo Group is an organization that supports ..."
+        />
       </body>
     </html>
   )
