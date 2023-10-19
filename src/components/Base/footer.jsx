@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <section>
       <BottomTop></BottomTop>
+
       <BottomDown></BottomDown>
     </section>
   );

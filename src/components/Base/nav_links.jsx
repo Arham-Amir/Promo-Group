@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 const Nav_Links = (props = {}) => {
   const path = usePathname();
   return (<>
-    <section className={`${props.className}`}>
+    <section className={`${props.className} font-nav`}>
       {path == '/' ? <>
         <Lin className={`${props.childClass} hover:bg-indigo-950 transition-all duration-100 ease-in-out cursor-pointer ${path == '/' && 'bg-indigo-950'}`} to="home" spy={true} smooth={true} duration={500} onClick={() => { document.body.classList.remove('overflow-hidden'); props.showHam?.() }}>HOME </Lin>
         <Link className={`${props.childClass} hover:bg-indigo-950 transition-all duration-100 ease-in-out cursor-pointer ${path == '/blogs' && 'bg-indigo-950'}`} href="/blogs" onClick={() => { document.body.classList.remove('overflow-hidden'); props.showHam?.() }}>BLOGS</Link>

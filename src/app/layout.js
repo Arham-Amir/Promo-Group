@@ -1,5 +1,5 @@
 import './globals.css'
-import { Nunito_Sans } from 'next/font/google'
+import { Nunito_Sans, Montserrat } from 'next/font/google'
 import Navbar from '@components/Base/navbar.jsx'
 import Footer from '@components/Base/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
@@ -9,6 +9,10 @@ import { ArticleJsonLd } from 'next-seo';
 const nunito = Nunito_Sans({
   subsets: ['latin'],
   variable: '--font-roboto'
+})
+const monts= Montserrat({
+  subsets: ['latin'],
+  variable: '--font-monts'
 })
 
 export const metadata = {
@@ -31,7 +35,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${nunito.variable} font-sans w-screen overflow-x-hidden relative`}>
+      <body className={`${nunito.variable} ${monts.variable} font-sans w-screen overflow-x-hidden relative`}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
         <ContactPopUpBtn></ContactPopUpBtn>

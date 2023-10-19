@@ -50,9 +50,9 @@ const Navbar = () => {
 
   return (<>
     <section ref={navRef} className={`flex overflow-x-hidden items-center justify-center md:absolute top-0 z-30 w-screen  backdrop-blur-[3px] xs:bg-gradient-to-b xs:from-black xs:to-gray-900 md:from-transparent md:to-transparent md:bg-black/10  xs:relative ${ham ? 'xs:h-screen' : 'md:h-auto'}`}>
-      <nav className="xs:w-[90vw] lg:w-[80vw] mx-auto rounded-b-2xl h-20 2xl:h-28 text-white py-3 lg:pl-8 lg:pr-12 xl:pl-10 xl:pr-24 sm:px-10 xs:px-4 xl:text-lg lg:text-md 2xl:text-2xl 3xl:text-3xl flex items-center justify-between font-sans">
+      <nav className="xs:w-[90vw] lg:w-[80vw] mx-auto rounded-b-2xl h-20 2xl:h-28 text-white py-3 lg:pl-8 lg:pr-12 xl:pl-10 xl:pr-24 sm:px-10 xs:px-4 xl:text-lg lg:text-md 2xl:text-2xl 3xl:text-3xl flex items-center justify-between font-nav">
         <Nav_Logo></Nav_Logo>
-        <Nav_Links childClass = "px-3 py-1" className='xs:hidden md:flex md:gap-7 lg:gap-12 font-semibold' />
+        <Nav_Links childClass = "px-3 py-1" className='xs:hidden md:flex md:gap-7 lg:gap-12 ' />
         <section onClick={() => { showHam(!ham) }} className="z-30 md:hidden xs:flex flex-col items-end justify-center gap-2 pr-4" >
           <p className={`${ham ? 'w-6 rotate-[495deg] translate-y-[10px]' : 'w-8'}  transition-all duration-500 p-[1px] bg-white`}></p>
           <p className={`w-6 p-[1px] transition-all duration-500 bg-white ${ham ? 'opacity-0' : 'opacity-100'} transform ${ham ? '-translate-y-10' : 'translate-y-0'}`}></p>

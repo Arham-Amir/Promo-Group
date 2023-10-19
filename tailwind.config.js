@@ -12,11 +12,13 @@ module.exports = {
         'sm': '440px',
         'ms': '570px',
         'md': '800px',
+        'lg': '1024px',
         '2xl': '1600px',
         '3xl': '2000px',
       },
       fontFamily: {
-        sans: ['var(--font-roboto)']
+        sans: ['var(--font-roboto)'],
+        nav: ['var(--font-monts)']
       },
       flexBasis: {
         '3/10': '25%',

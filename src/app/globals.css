@@ -67,10 +67,11 @@
     @apply bg-slate-500;
     border-radius: 4px;
   }
+
   /* Gallary Images Animation */
 
-  .scroll-section {
-    /* animation: scrollCards 10s linear infinite alternate; */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
   }
 
 
