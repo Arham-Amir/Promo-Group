@@ -6,8 +6,8 @@ import { MdOutlineNavigateNext } from 'react-icons/md'
 
 const BottomTop = () => {
   return (
-    <section className=" bg-gradient-to-br from-indigo-950 to-sky-600">
-      <section className="2xl:text-xl 2xl:h-auto lg:h-auto xs:h-auto px-6 py-10 text-white
+    <section className=" bg-gradient-to-tr from-indigo-950 to-sky-600">
+      <section className="2xl:text-xl 2xl:h-auto lg:h-auto xs:h-auto px-6 lg:py-10 md:pt-10 md:pb-6 text-white
     flex lg:justify-around lg:flex-row xs:flex-col">
         <section className="py-4  flex flex-col items-center gap-3">
           <Image src={'/image/nav_logo.png'} width={0} height={0}
@@ -70,12 +70,12 @@ const BottomTop = () => {
         </section> */}
         </section>
       </section>
-      <hr className="w-11/12 mx-auto bg-slate-300"/>
-      <section className='flex justify-between items-center px-20 gap-10 h-[200px]'>
-        <a target='blank' className='h-full' href="https://www.promodevelopers.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promodevelopers.gif" alt="" /></a>
-        <a target='blank' className='h-full' href="https://www.promobrick.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promobrick.gif" alt="" /></a>
-        <a target='blank' className='h-full' href="https://www.promogarlic.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promogarlic.gif" alt="" /></a>
-        <a target='blank' className='h-full' href="https://www.promofarms.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promofarms.gif" alt="" /></a>
+      <hr className="hidden lg:block w-11/12 mx-auto bg-slate-300"/>
+      <section className='grid grid-cols-2 md:grid-cols-4 place-items-center items-center px-20 pb-3 lg:pb-0 gap-5 md:gap-10 '>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promodevelopers.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promodevelopers.gif" alt="" /></a>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promobrick.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promobrick.gif" alt="" /></a>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promogarlic.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promogarlic.gif" alt="" /></a>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promofarms.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promofarms.gif" alt="" /></a>
       </section>
     </section>
   );
