@@ -25,7 +25,7 @@ const Slider = () => {
           >
             <Image src={img} loading="lazy" width={0} height={0} className={`grayscale-[100%] hover:grayscale-0 object-cover w-full h-full ${i !== imgs.length - 1 ? 'md:border-r-8' : ''}`} alt="Slider images" />
             <section
-              className={` xs:backdrop-blur-[1px] flex flex-col justify-center items-center gap-4 absolute md:bottom-6 xs:bottom-0 lg:text-right xs:text-center text-white 2xl:text-4xl md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 w-[90%] left-1/2 -translate-x-1/2 ${hoveredIndex === i ? 'hovered-section' : ''
+              className={` xs:backdrop-blur-[1px] flex flex-col justify-center items-center gap-4 absolute md:bottom-6 xs:bottom-0 lg:text-right xs:text-center text-white 2xl:text-2xl 3xl:text-4xl md:text-lg sm:text-lg xs:text-sm xs-mx-2 font-bold p-4 w-[90%] left-1/2 -translate-x-1/2 ${hoveredIndex === i ? 'hovered-section' : ''
                 }`}
             >
               <h1 className={`${hoveredIndex === i ? '' : 'block'} -skew-x-12 xs:bg-gradient-to-l px-2 py-1 xs:from-black xs:to-black/30 min-w-[90%]`}>{businesses[i][0]}</h1>

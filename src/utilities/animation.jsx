@@ -2,10 +2,10 @@
 import { animate, motion, useAnimation, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react';
 
-const RevealUp = ({ children }) => {
+const RevealUp = ({ children, className }) => {
 
   return (
-    <section className=''>
+    <section className={`${className}`}>
       <motion.section
         variants={{
           hidden: { opacity: 0, y: 75 },

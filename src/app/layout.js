@@ -1,7 +1,7 @@
 import './globals.css'
 import { Nunito_Sans, Montserrat } from 'next/font/google'
 import Navbar from '@components/Base/navbar.jsx'
-import Footer from '@components/Base/footer.jsx'
+import Footer from '@components/Base/footer/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
 import { ArticleJsonLd } from 'next-seo';
@@ -10,7 +10,7 @@ const nunito = Nunito_Sans({
   subsets: ['latin'],
   variable: '--font-roboto'
 })
-const monts= Montserrat({
+const monts = Montserrat({
   subsets: ['latin'],
   variable: '--font-monts'
 })

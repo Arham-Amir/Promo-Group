@@ -1,7 +1,7 @@
 import Slider from "@components/Home/slider.jsx"
-import ContactUsPage from "@components/ContactUs/contactUsPage.jsx"
 import AboutUs from "@components/AboutUs/aboutUs.jsx"
 import { Suspense } from 'react'
+import ContactUs from "@components/Base/contactUs/contactUs"
 
 export const metadata = {
   title: 'Promo Group',
@@ -29,7 +29,8 @@ export default function Home(props = {}) {
         <AboutUs />
       </Suspense>
       <Suspense fallback={<p>Loading ...</p>}>
-        <ContactUsPage />
+        {/* <ContactUsPage /> */}
+        <ContactUs />
       </Suspense>
     </main>
   )

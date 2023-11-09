@@ -23,6 +23,9 @@ module.exports = {
       flexBasis: {
         '3/10': '25%',
         '2/10': '25%',
+      },
+      colors:{
+        'darkColor': "#0A1128",
       }
     },
   },

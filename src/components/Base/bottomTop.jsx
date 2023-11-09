@@ -15,7 +15,7 @@ const BottomTop = () => {
           <h1 className="text-2xl">Promo Group</h1>
           <h2 className="text-lg">Follow us on</h2>
           <span className="flex flex-row gap-7 items-center object-cover py-2">
-            <Link href='https://www.facebook.com' target="_blank"><BsFacebook size={25}></BsFacebook></Link>
+            <Link href='https://www.facebook.com/TechnoPakConstruction/' target="_blank"><BsFacebook size={25}></BsFacebook></Link>
             <Link href='https://www.instagram.com' target="_blank"><BsInstagram size={25}></BsInstagram></Link>
             <Link href='https://www.linkedin.com' target="_blank"><BsLinkedin size={25}></BsLinkedin></Link>
             <Link href='https://www.youtube.com' target="_blank"><BsYoutube size={30}></BsYoutube></Link>
@@ -72,10 +72,14 @@ const BottomTop = () => {
       </section>
       <hr className="hidden lg:block w-11/12 mx-auto bg-slate-300"/>
       <section className='grid grid-cols-2 md:grid-cols-4 place-items-center items-center px-20 pb-3 lg:pb-0 gap-5 md:gap-10 '>
-        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promodevelopers.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promodevelopers.gif" alt="" /></a>
-        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promobrick.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promobrick.gif" alt="" /></a>
-        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promogarlic.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promogarlic.gif" alt="" /></a>
-        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promofarms.com/"><img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promofarms.gif" alt="" /></a>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promodevelopers.com/">
+          <img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promodevelopers.gif" alt="" /></a>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promobrick.com/">
+          <img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promobrick.gif" alt="" /></a>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promogarlic.com/">
+          <img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promogarlic.gif" alt="" /></a>
+        <a target='blank' className='ms:h-[200px] w-fit md:w-[200px]' href="https://www.promofarms.com/">
+          <img className='h-full object-contain hover:-translate-y-4 transition-all duration-200 cursor-pointer drop-shadow-[0_35px_35px_rgba(255,255,255,0.40)]' src="/logos/promofarms.gif" alt="" /></a>
       </section>
     </section>
   );

@@ -33,7 +33,7 @@ const AboutUs = () => {
         <section className="w-full sm:p-10 xs:p-6 flex md:flex-row xs:flex-col">
           <RevealRight>
             <section className="w-full flex-center">
-              <h1 className="hover-underline-animation after:bg-indigo-800 hover:text-indigo-800 2xl:text-4xl 3xl:text-5xl text-3xl font-bold pb-2 mb-4">Hello, We are Promo Group</h1>
+              <h1 className="hover-underline-animation after:bg-indigo-900 hover:text-indigo-900 2xl:text-4xl 3xl:text-5xl text-3xl font-bold pb-2 mb-4">Hello, We are Promo Group</h1>
             </section>
             <p className="md:w-4/5 xs:w-[96%] mx-auto text-lg 2xl:text-2xl 3xl:text-3xl">As multibusiness organization, PromoGroup operates in the real estate, construction, building material, agriculture, dairy and livestock sector. Since 2018, we have been categorically providing and meeting the demands of both domestic and global markets in the name of our products.
             </p>
