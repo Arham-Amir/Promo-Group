@@ -5,6 +5,10 @@ import Footer from '@components/Base/footer/footer.jsx'
 import ContactPopUpBtn from '@components/Base/contactPopUpBtn'
 import { ToastContainer } from 'react-toastify';
 import { ArticleJsonLd } from 'next-seo';
+import UpComingEvent from '@components/Base/upComingEvent'
+import ShowEvent from '@components/Base/showEvent'
+import { Suspense } from 'react'
+import ContactUs from "@components/Base/contactUs/contactUs"
 
 const nunito = Nunito_Sans({
   subsets: ['latin'],
@@ -35,12 +39,17 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${monts.variable} font-sans w-screen overflow-x-hidden relative`}>
+      <body className={`${nunito.variable} ${monts.variable} font-sans w-screen overflow-x-hidden relative scrollbar`}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
-        <ContactPopUpBtn></ContactPopUpBtn>
+        <ShowEvent />
+        <ContactPopUpBtn />
+        <UpComingEvent />
         {children}
-        <Footer></Footer>
+        <Suspense fallback={<p>Loading ...</p>}>
+          <ContactUs />
+        </Suspense>
+        <Footer/>
         <ArticleJsonLd
           useAppDir={true}
           type="website"

@@ -1,13 +1,13 @@
 'use client'
 import VideoSection from "@components/AboutUs/videoSection.jsx";
 import { useEffect, useState } from "react";
-import { GrNext, GrPrevious } from 'react-icons/gr';
+import { AiOutlineVerticalLeft, AiOutlineVerticalRight } from 'react-icons/ai'
 import { RevealRight } from "@utilities/animation";
 import Galary from "@components/Galary/galary";
 
 const AboutUs = () => {
   const [data, setData] = useState([
-    "https://www.youtube.com/embed/VKFADBNbcAU",
+    "https://www.youtube.com/embed/xDxWfakk_Pc?si=M2M3x8-oN0CYWzPv",
     "https://www.youtube.com/embed/CIwHxqlhpZo",
     "https://www.youtube.com/embed/VKFADBNbcAU",
   ])
@@ -46,11 +46,11 @@ const AboutUs = () => {
               return (
                 <VideoSection className='shadow-lg lg:h-[400px] lg:w-[680px]
               xs:w-[82vw] xs:h-[315px] ms:w-[500px] ms:h-[345px] md:w-[700px] md:h-[375px] 2xl:w-[1100px] 2xl:h-[500px]' classP='z-20' key={i} video={el}>
-                  <button onClick={() => handleSlideChange('inc')} className='absolute top-1/2 left-6'>
-                    <GrPrevious className='text-white' size={46} />
+                  <button onClick={() => handleSlideChange('inc')} className='absolute top-1/2 left-6 -translate-y-1/2'>
+                    <AiOutlineVerticalRight className='text-[#007aff]' size={46} />
                   </button>
-                  <button onClick={() => handleSlideChange('dec')} className='absolute top-1/2 right-6'>
-                    <GrNext color="white" size={46} />
+                  <button onClick={() => handleSlideChange('dec')} className='absolute top-1/2 right-6 -translate-y-1/2'>
+                    <AiOutlineVerticalLeft className='text-[#007aff]' size={46} />
                   </button>
                 </VideoSection>
               )

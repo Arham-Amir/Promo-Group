@@ -28,10 +28,6 @@ export default function Home(props = {}) {
       <Suspense fallback={<p>Loading ...</p>}>
         <AboutUs />
       </Suspense>
-      <Suspense fallback={<p>Loading ...</p>}>
-        {/* <ContactUsPage /> */}
-        <ContactUs />
-      </Suspense>
     </main>
   )
 }
