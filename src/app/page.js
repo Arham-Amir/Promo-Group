@@ -1,7 +1,6 @@
 import Slider from "@components/Home/slider.jsx"
 import AboutUs from "@components/AboutUs/aboutUs.jsx"
 import { Suspense } from 'react'
-import ContactUs from "@components/Base/contactUs/contactUs"
 
 export const metadata = {
   title: 'Promo Group',

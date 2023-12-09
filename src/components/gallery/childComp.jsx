@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../base/slider/slider';
+import Slider from '../base/slider/slider.jsx';
 import Video from './video/video';
 
 

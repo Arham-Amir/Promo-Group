@@ -35,6 +35,7 @@ export const metadata = {
     image: "/image/nav_logo.png",
   }
 }
+
 export default function RootLayout({ children }) {
 
   return (
