@@ -1,4 +1,5 @@
 'use client'
+import LazyImage from '@components/Base/lazyImage';
 import React, { useState, useRef } from 'react';
 import { GrNext, GrPrevious } from 'react-icons/gr';
 
@@ -29,9 +30,9 @@ const Galary = () => {
       totalWidth += img.clientWidth;
       if (totalWidth > activeImage) {
         if (direction === "left") {
-          slider.scrollLeft -= img.clientWidth+50;
+          slider.scrollLeft -= img.clientWidth + 50;
         } else {
-          slider.scrollLeft += img.clientWidth+50;
+          slider.scrollLeft += img.clientWidth + 50;
         }
         return true;
       }
@@ -68,7 +69,8 @@ function ImgCard(props = {}) {
       onMouseLeave={() => props.setIsHovered(false)}
     >
       <section className="overflow-hidden card-img h-full w-full">
-        <img src={props.img} alt="img/ISO.png" className={`h-full w-full ${props.isHovered ? 'opacity-40' : 'opacity-100'} hover:opacity-100 hover:shadow-lg hover:shadow-black transition-opacity duration-150`} />
+        <LazyImage className={`h-full w-full ${props.isHovered ? 'opacity-40' : 'opacity-100'} hover:opacity-100 hover:shadow-lg hover:shadow-black transition-opacity duration-150`} src={props.img} />
+        {/* <img src={props.img} alt="img/ISO.png" className={`h-full w-full ${props.isHovered ? 'opacity-40' : 'opacity-100'} hover:opacity-100 hover:shadow-lg hover:shadow-black transition-opacity duration-150`} /> */}
       </section>
     </section>
   );
