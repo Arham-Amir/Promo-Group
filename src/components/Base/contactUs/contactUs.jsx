@@ -26,7 +26,7 @@ const ContactUs = () => {
         </ContactInfo>
         <ContactInfo>
           <SiMinutemailer size={54} className='bg-darkColor text-white rounded-full p-3' />
-          <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Email: <span className='font-normal'>info@promogroup.com</span></h2>
+          <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Email: <span className='font-normal'>info@promogroup.com.pk</span></h2>
         </ContactInfo>
         <ContactInfo>
           <FaPhoneAlt size={54} className='bg-darkColor text-white rounded-full p-3' />
