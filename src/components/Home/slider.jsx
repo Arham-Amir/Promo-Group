@@ -11,7 +11,7 @@ const Slider = () => {
     ['Promo Developers', 'https://www.promodevelopers.com/', 'We ensure that every project we undertake is a resounding success'],
     ['Promo Brick', 'https://www.promobrick.com/', 'Emphasize the importance of bricks in building the foundation of any structure'],
     ['Promo Garlic', 'http://promogarlic.com/', 'Grow and Distribute high-quality genuine NARC G1 garlic seed all over the Pakistan.'],
-    ['Promo Farms', '/', 'Emphasize the importance of bricks in building the foundation of any structure'],
+    ['Promo Farms', 'https://www.promoland.com.pk/', 'Emphasize the importance of bricks in building the foundation of any structure'],
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
