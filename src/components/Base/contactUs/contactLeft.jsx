@@ -16,21 +16,22 @@ const ContactLeft = (props = {}) => {
     }
     else {
       emailjs.send(
-        "service_es973jf",
-        "template_nocv9o9",
+        "service_1v595rc",
+        "template_afzf72r",
         {
           user_name,
           user_email,
           user_message
         },
-        "3uBa2MTILF_j_PX_3"
+        "KIXAtcAL183NMRhd8"
       ).then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
         toast.success('Your Responce Send Successfully!')
       }, function (error) {
-        console.log('FAILED...', error);
         toast('Your Responce Sending Process Failed!')
       });
+      setUserName("")
+      setUserEmail("")
+      setUserMessage("")
     }
   }
   return (
