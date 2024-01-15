@@ -8,11 +8,12 @@ const Galary = () => {
   const sliderRef = useRef(null);
   const images = [
     '/image/slider1.jpg',
-    '/image/slider2.jpg',
+    '/image/slider6.jpg',
     '/image/slider3.jpg',
-    '/image/slider5.jpg',
     '/image/slider4.jpg',
     '/image/galery.jpg',
+    '/image/slider2.jpg',
+    '/image/slider5.jpg',
   ];
 
   const scrollGallery = (direction) => {
