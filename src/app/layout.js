@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
       <body className={`${nunito.variable} ${monts.variable} font-sans w-screen overflow-x-hidden relative scrollbar`}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
-        <ShowEvent />
+        {/* <ShowEvent /> */}
         <ContactPopUpBtn />
-        <UpComingEvent />
+        {/* <UpComingEvent /> */}
         {children}
         <Suspense fallback={<p>Loading ...</p>}>
           <ContactUs />
